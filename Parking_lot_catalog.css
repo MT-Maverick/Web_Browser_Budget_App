@@ -1,0 +1,50 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+    
+int userfeed(){
+    double  interest = 0.90;
+    double fee = 12.00;
+    double fee_array[2];
+    
+    int min_time =3;
+    int max_time =24;
+    
+    int Car,car_array[2];
+    int Hours,hours_array[2];
+    
+    for(int i=0;i<3;i++){
+        cout<<"Enter The Car No.:\n";
+        cin>>Car; cin.ignore();
+        car_array[i] = Car;
+        
+        cout<< "Enter The NO. Hours:\n";
+        cin>>Hours; cin.ignore();
+        hours_array[i] = Hours;    
+        
+        if((Hours>min_time)&&(Hours<max_time))
+        {
+          fee_array[i] = fee+(interest*Hours);
+        }
+        else if(Hours>=max_time)
+        {
+          fee_array[i] = 20;
+        }
+        else{
+          fee_array[i] = fee;
+        };
+    };
+    
+        cout<<setw(3)<<"Cars:"<<setw(10)<<"Hours:"<<setw(20)<<"Rate per hour:"<<"\n";
+        cout<<setw(3)<<car_array[0]<<setw(10)<<hours_array[0]<<setw(20)<<fee_array[0]<<"\n";
+        cout<<setw(3)<<car_array[1]<<setw(10)<<hours_array[1]<<setw(20)<<fee_array[1]<<"\n";
+        cout<<setw(3)<<car_array[2]<<setw(10)<<hours_array[2]<<setw(20)<<fee_array[2]<<"\n";
+    
+        return 0;
+    }
+    
+    int main() {
+    userfeed();
+    return 0;
+}
