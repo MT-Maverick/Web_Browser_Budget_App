@@ -107,7 +107,7 @@ function calculateTotalBalance(Income, Expense) { return Income - Expense; }
 function showEntry(list, type, title, amount, id) {
 const entry = `<li id="${id}" class="${type}">
 <div class="${type}-entry">${title} R${amount}</div>
-<img id="delete" src="Delete.png">
+<img id="delete" src="./resources/Delete.png">
 </li>`;
 
  list.insertAdjacentHTML("afterbegin", entry); } 
