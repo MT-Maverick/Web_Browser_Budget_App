@@ -79,7 +79,7 @@
     background-color: honeydew;
 }
 .Expense-List{
-    max-height: fit-content;
+    max-height: Justify;
     min-height: 200px;
     color: red;
     marker: none;
@@ -134,17 +134,23 @@
 }
 
 .Expense-Input{
-    display: flex;
-    justify-content:center;
-    max-height: 30px;
-    min-height: fit-content;
+    height: 200px;         
+    width: 300px;         
+    overflow: hidden;   
+    box-sizing: border-box;
+    color: unset;
+    marker: none;
+    padding-top: 7%;
 }
 
 .Income-Input{
-    display: flex;
-    justify-content:space-around;
-    max-height: 30px;
-    min-height: fit-content;
+     height: 200px;         
+    width: 300px;         
+    overflow: hidden;   
+    box-sizing: border-box;
+    color: unset;
+    marker: none;
+    padding-top: 7%;
     
 }
 
